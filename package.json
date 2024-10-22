@@ -1,0 +1,25 @@
+{
+  "name": "esoteric-utility",
+  "version": "0.0.1",
+  "description": "All the TypeScript utilities used by the Esoteric Foundation.",
+  "main": "distrib/main/main.js",
+  "scripts": {
+    "test": "npm run installDependencies && npm run tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EsotericFoundation/utility.ts.git"
+  },
+  "keywords": [
+    "utility",
+    "utilities",
+    "useful",
+    "esoteric"
+  ],
+  "author": "Esoteric Foundation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EsotericFoundation/utility.ts/issues"
+  },
+  "homepage": "https://github.com/EsotericFoundation/utility.ts#readme"
+}
