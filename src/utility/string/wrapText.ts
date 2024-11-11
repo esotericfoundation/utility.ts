@@ -4,7 +4,7 @@ export function wrapText(text: string, limit: number): string {
   text = cleanString(text);
   let wrappedText = "";
 
-  const paragraphs = text.split(/\n\n|\r\r|\r \r/);
+  const paragraphs = text.split(/\n\n/);
 
   console.log(paragraphs)
 
