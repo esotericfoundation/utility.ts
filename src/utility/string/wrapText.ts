@@ -45,7 +45,7 @@ export function wrapLine(line: string, limit: number, indentPart?: RegExp): stri
     currentLine += word + " ";
 
     if (w == words.length - 1 || currentLine.length + words[w + 1].length > limit) {
-      wrappedLine += indent + currentLine.trimEnd() + "\n";
+      wrappedLine += indent + currentLine.trimEnd() + (w == words.length - 1 ? "" : "\n");
       currentLine = "";
     }
   }
