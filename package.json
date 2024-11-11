@@ -4,6 +4,10 @@
   "description": "All the TypeScript utilities used by the Esoteric Foundation.",
   "main": "distrib/main/main.js",
   "scripts": {
+    "installDependencies": "npm i",
+    "compile": "npx tsc",
+    "build": "npm run installDependencies && npm run test && npm run compile",
+    "tests": "npx jest",
     "test": "npm run installDependencies && npm run tests"
   },
   "repository": {
