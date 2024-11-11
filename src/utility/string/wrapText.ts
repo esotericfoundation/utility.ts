@@ -27,7 +27,7 @@ export function wrapLine(line: string, limit: number, indentPart?: RegExp): stri
 
   const match = line.match(indentPart);
 
-  const matchIndent = match[0] ? indentCharacter.repeat(match[0].length) : "";
+  const matchIndent = match?.[0] ? indentCharacter.repeat(match[0].length) : "";
   const totalIndent = indent + matchIndent;
 
   const trimmedLine = line.trimStart();
