@@ -1,4 +1,6 @@
 export function wrapText(text: string, limit: number): string {
+  text = text.replaceAll(/\n(?!\\n)/g, " ");
+  
   let wrappedText = "";
   let currentLine = "";
 
@@ -21,5 +23,3 @@ export function wrapText(text: string, limit: number): string {
 
   return wrappedText;
 }
-
-console.log(wrapText("This is a test string.", 10));
