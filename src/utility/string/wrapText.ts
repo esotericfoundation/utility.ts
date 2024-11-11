@@ -23,11 +23,11 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
   }
 
   const indent = paragraph.match(/^\s*/)[0];
-  const indentCharacter = indent?.[0] ?? " ";
+  const indentCharacter = indent[0] ?? " ";
 
   const match = paragraph.match(indentPart);
 
-  const matchIndent = match?.[0] ? indentCharacter.repeat(match?.[0]?.length) : "";
+  const matchIndent = match?.[0] ? indentCharacter.repeat(match[0].length) : "";
   const totalIndent = indent + matchIndent;
 
   paragraph = paragraph.replaceAll("\n", " ");
@@ -45,8 +45,10 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
     currentLine += word + " ";
 
-    if (w == words.length - 1 || (linesWrapped == 0 ? indent : totalIndent).length + currentLine.length + words[w + 1].length > limit) {
-      wrappedParagraph += (linesWrapped == 0 ? indent : totalIndent) + currentLine.trimEnd() + (w == words.length - 1 ? "" : "\n");
+    const currentIndent = linesWrapped == 0 ? indent : totalIndent;
+
+    if (w === words.length - 1 || currentIndent.length + currentLine.length + words[w + 1].length > limit) {
+      wrappedParagraph += currentIndent + currentLine.trimEnd() + (w === words.length - 1 ? "" : "\n");
 
       linesWrapped++;
       currentLine = "";
