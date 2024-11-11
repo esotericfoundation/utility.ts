@@ -26,12 +26,7 @@
     "url": "https://www.github.com/EsotericFoundation",
     "email": "foundationesoteric@gmail.com"
   },
-  "licenses": [
-    {
-      "type": "EFPL",
-      "url": "https://github.com/EsotericFoundation/utility.ts?tab=License-1-ov-file"
-    }
-  ],
+  "license": "EFPL",
   "bugs": {
     "url": "https://github.com/EsotericFoundation/utility.ts/issues"
   },
