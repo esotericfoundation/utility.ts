@@ -30,7 +30,10 @@ export function wrapParagraph(text: string, limit: number): string {
 
     currentLine += word + " ";
 
-    if (i === words.length - 1 || currentLine.length + words[i + 1].length > limit) {
+    if (
+      i === words.length - 1 ||
+      currentLine.length + words[i + 1].length > limit
+    ) {
       wrappedText += currentLine.trim() + "\n";
       currentLine = "";
     }
