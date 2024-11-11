@@ -18,31 +18,16 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
   paragraph = paragraph.trimEnd();
 
-  console.log(paragraph);
-
   if (paragraph.length <= limit) {
-    console.log("Line is already SHORT enough!")
     return paragraph;
-  } else {
-    console.log("Line is too LONG!")
   }
 
   const indent = paragraph.match(/^\s*/)[0];
   const indentCharacter = indent?.[0] ?? " ";
 
-  console.log(indentCharacter.length)
-
   const match = paragraph.match(indentPart);
 
-  console.log(match)
-  console.log(match?.[0]?.length);
-  console.log("Is 3 characters long? " + (match?.[0]?.length == 3))
-
-  console.log("|||" + indentCharacter.repeat(match?.[0]?.length) + "|||")
-  console.log("|||" + indentCharacter.repeat(3) + "|||")
-
   const matchIndent = match?.[0] ? indentCharacter.repeat(match?.[0]?.length) : "";
-  console.log(matchIndent.length);
   const totalIndent = indent + matchIndent;
 
   paragraph = paragraph.replaceAll("\n", " ");
@@ -57,8 +42,6 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
   for (let w = 0; w < words.length; w++) {
     const word = words[w];
-
-    console.log("||" + word + "||")
 
     currentLine += word + " ";
 
