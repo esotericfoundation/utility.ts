@@ -80,4 +80,16 @@ describe("wrapText", () => {
 
     expect(wrappedText).toBe("This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.\n");
   });
+
+  it("respects indents (with a newline at the end)", () => {
+    const indentedText = `1. give appropriate Attribution, as is defined in the Public License below; and\n`;
+
+    const expectedText = `1. give appropriate Attribution, as is defined in the Public License
+   below; and\n`;
+
+    const limit = 71;
+    const wrappedText = wrapText(indentedText, limit, /\d+\. /);
+
+    expect(wrappedText).toBe(expectedText);
+  });
 });
