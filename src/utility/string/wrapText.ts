@@ -20,8 +20,6 @@ export function wrapText(text: string, limit: number): string {
 }
 
 export function wrapParagraph(text: string, limit: number): string {
-  text = cleanString(text);
-
   let wrappedText = "";
   let currentLine = "";
 
