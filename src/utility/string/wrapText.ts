@@ -36,8 +36,9 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
   console.log(match)
   console.log(match?.[0]?.length);
+  console.log("Is 3 characters long? " + (match?.[0]?.length == 3))
 
-  const matchIndent = match?.[0] ? indentCharacter.repeat(match[0].length) : "";
+  const matchIndent = match?.[0] ? indentCharacter.repeat(match?.[0]?.length) : "";
   console.log(matchIndent.length);
   const totalIndent = indent + matchIndent;
 
