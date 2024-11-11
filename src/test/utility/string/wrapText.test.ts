@@ -48,7 +48,7 @@ describe("wrapText", () => {
 
   it("handles large inputs correctly", () => {
     const largeText = readFileSync("src/test/utility/string/largeTextExample.txt").toString();
-    const expectedWrappedText = readFileSync("src/test/utility/string/wrappedLargeText.txt").toString();
+    const expectedWrappedText = readFileSync("src/test/utility/string/wrappedLargeText.txt").toString().replaceAll("\r\n", "\n");
 
     const limit = 71;
 
