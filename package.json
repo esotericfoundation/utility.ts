@@ -6,7 +6,7 @@
   "scripts": {
     "installDependencies": "npm i",
     "compile": "npx tsc",
-    "build": "npm run installDependencies && npm run test && npm run compile",
+    "build": "npm run installDependencies && npm run tests && npm run compile",
     "tests": "npx jest",
     "test": "npm run installDependencies && npm run tests"
   },
