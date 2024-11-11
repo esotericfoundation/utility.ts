@@ -45,6 +45,8 @@ export function wrapLine(line: string, limit: number, indentPart?: RegExp): stri
   for (let w = 0; w < words.length; w++) {
     const word = words[w];
 
+    console.log(word)
+
     currentLine += word + " ";
 
     if (w == words.length - 1 || totalIndent.length + currentLine.length + words[w + 1].length > limit) {
