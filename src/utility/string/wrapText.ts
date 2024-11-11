@@ -10,7 +10,7 @@ export function wrapText(text: string, limit: number, indentPart?: RegExp): stri
     wrappedText += wrapLine(line, limit, indentPart) + "\n";
   }
 
-  return wrappedText;
+  return wrappedText.trimEnd() + "\n";
 }
 
 export function wrapLine(line: string, limit: number, indentPart?: RegExp): string {
