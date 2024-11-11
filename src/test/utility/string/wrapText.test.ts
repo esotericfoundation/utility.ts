@@ -1,5 +1,5 @@
 import { wrapText } from "../../../utility/string/wrapText";
-import { readFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 
 describe("wrapText", () => {
   it("wraps text at the given limit", () => {
@@ -40,6 +40,9 @@ describe("wrapText", () => {
     const limit = 71;
 
     const wrappedText = wrapText(largeText, limit);
+
+    writeFileSync("output.txt", wrappedText);
+
     expect(wrappedText).toBe(expectedWrappedText);
   })
 
