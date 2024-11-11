@@ -32,6 +32,8 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
   const match = paragraph.match(indentPart);
 
+  console.log(match);
+
   const matchIndent = match?.[0] ? indentCharacter.repeat(match[0].length) : "";
   console.log(matchIndent.length);
   const totalIndent = indent + matchIndent;
