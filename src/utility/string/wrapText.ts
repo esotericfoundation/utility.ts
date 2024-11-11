@@ -1,5 +1,7 @@
+import { cleanString } from "./cleanString";
+
 export function wrapText(text: string, limit: number): string {
-  text = text.replaceAll(/\n(?!\\n)/g, " ");
+  text = cleanString(text);
   
   let wrappedText = "";
   let currentLine = "";
