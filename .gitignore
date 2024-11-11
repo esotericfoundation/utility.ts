@@ -131,3 +131,6 @@ dist
 
 # package.json history and information
 package-lock.json
+
+# Common output file
+output.txt
