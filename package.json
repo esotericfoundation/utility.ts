@@ -17,7 +17,13 @@
     "esoteric"
   ],
   "author": "Esoteric Foundation",
-  "license": "MIT",
+  "license": "EFPL",
+  "licenses": [
+    {
+      "type": "EFPL",
+      "url": "https://github.com/EsotericFoundation/utility.ts?tab=License-1-ov-file"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/EsotericFoundation/utility.ts/issues"
   },
