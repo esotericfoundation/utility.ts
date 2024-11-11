@@ -45,7 +45,7 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
     currentLine += word + " ";
 
-    const currentIndent = linesWrapped == 0 ? indent : totalIndent;
+    const currentIndent = linesWrapped === 0 ? indent : totalIndent;
 
     if (w === words.length - 1 || currentIndent.length + currentLine.length + words[w + 1].length > limit) {
       wrappedParagraph += currentIndent + currentLine.trimEnd() + (w === words.length - 1 ? "" : "\n");
