@@ -17,9 +17,7 @@ describe("wrapText", () => {
 
     const wrappedText = wrapText(text, limit);
 
-    expect(wrappedText).toBe(
-      "This is a\ntest\nstring\nwith a\nnewline\ncharacter.\n"
-    );
+    expect(wrappedText).toBe("This is a\ntest\nstring\nwith a\nnewline\ncharacter.\n");
   });
 
   it("respects double \\n characters", () => {
@@ -28,23 +26,20 @@ describe("wrapText", () => {
 
     const wrappedText = wrapText(text, limit);
 
-    expect(wrappedText).toBe(
-      "This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.\n"
-    );
+    expect(wrappedText).toBe("This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.\n");
   });
 
   it("respects indents", () => {
-    const indentedText = `1. give appropriate Attribution, as is defined in the Public License below; and`
+    const indentedText = `1. give appropriate Attribution, as is defined in the Public License below; and`;
 
-    const expectedText =
-`1. give appropriate Attribution, as is defined in the Public License
+    const expectedText = `1. give appropriate Attribution, as is defined in the Public License
    below; and\n`;
 
     const limit = 71;
     const wrappedText = wrapText(indentedText, limit, /\d+\. /);
 
     expect(wrappedText).toBe(expectedText);
-  })
+  });
 
   it("handles large inputs correctly", () => {
     const largeText = readFileSync("src/test/utility/string/largeTextExample.txt").toString();
@@ -57,7 +52,7 @@ describe("wrapText", () => {
     writeFileSync("output.txt", wrappedText);
 
     expect(wrappedText).toBe(expectedWrappedText);
-  })
+  });
 
   it("wraps text (with a newline at the end) at the given limit", () => {
     const text = "This is a test string.\n";
@@ -74,9 +69,7 @@ describe("wrapText", () => {
 
     const wrappedText = wrapText(text, limit);
 
-    expect(wrappedText).toBe(
-      "This is a\ntest\nstring\nwith a\nnewline\ncharacter.\n"
-    );
+    expect(wrappedText).toBe("This is a\ntest\nstring\nwith a\nnewline\ncharacter.\n");
   });
 
   it("respects double \\n characters (with a newline at the end)", () => {
@@ -85,8 +78,6 @@ describe("wrapText", () => {
 
     const wrappedText = wrapText(text, limit);
 
-    expect(wrappedText).toBe(
-      "This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.\n"
-    );
+    expect(wrappedText).toBe("This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.\n");
   });
 });

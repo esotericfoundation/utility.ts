@@ -6,8 +6,6 @@ describe("cleanString", () => {
 
     const cleanedText = cleanString(text);
 
-    expect(cleanedText).toBe(
-      "This is a test string\n\nwith a newline character."
-    );
+    expect(cleanedText).toBe("This is a test string\n\nwith a newline character.");
   });
 });

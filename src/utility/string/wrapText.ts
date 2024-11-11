@@ -37,7 +37,7 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
   const words = trimmedLine.split(" ");
 
-  let linesWrapped = 0
+  let linesWrapped = 0;
   let currentLine = "";
 
   for (let w = 0; w < words.length; w++) {
