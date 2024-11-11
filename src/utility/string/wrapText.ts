@@ -5,8 +5,8 @@ export function wrapText(text: string, limit: number, indentPart?: RegExp): stri
   let wrappedText = "";
 
   const paragraphs = text.split("\n\n");
-  for (let l = 0; l < paragraphs.length; l++) {
-    const paragraph = paragraphs[l];
+  for (let p = 0; p < paragraphs.length; p++) {
+    const paragraph = paragraphs[p];
     wrappedText += wrapParagraph(paragraph, limit, indentPart) + "\n\n";
   }
 
@@ -33,9 +33,9 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
   paragraph = paragraph.replaceAll("\n", " ");
   paragraph = paragraph.replaceAll(RegExp(`${indentCharacter}{2,}`, "g"), " ");
 
-  const trimmedLine = paragraph.trimStart();
+  const trimmedParagraph = paragraph.trimStart();
 
-  const words = trimmedLine.split(" ");
+  const words = trimmedParagraph.split(" ");
 
   let linesWrapped = 0;
   let currentLine = "";
