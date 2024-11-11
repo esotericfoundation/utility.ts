@@ -1,7 +1,7 @@
 import { invertMap } from "../../../main";
 
 describe("invertMap", () => {
-    it("Correctly inverts maps", () => {
+    it("correctly inverts maps", () => {
         const map = new Map([
             ["a", 1],
             ["b", 2],

@@ -1,7 +1,7 @@
 import { objectIncludesValue } from "../../../main";
 
 describe("objectIncludesValue", () => {
-    it("Correctly checks if object includes value", () => {
+    it("correctly checks if object includes value", () => {
         const object = {
             a: 1,
             b: 2,
