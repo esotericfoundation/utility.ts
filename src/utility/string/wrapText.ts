@@ -30,6 +30,8 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
   const indent = paragraph.match(/^\s*/)[0];
   const indentCharacter = indent?.[0] ?? " ";
 
+  console.log(indentCharacter.length)
+
   const match = paragraph.match(indentPart);
 
   console.log(match)
