@@ -16,7 +16,7 @@ export function wrapText(text: string, limit: number): string {
     wrappedText += wrapParagraph(paragraph, limit).trim();
   }
 
-  return wrappedText;
+  return wrappedText + "\n";
 }
 
 export function wrapParagraph(text: string, limit: number): string {

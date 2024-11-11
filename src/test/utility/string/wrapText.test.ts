@@ -7,7 +7,7 @@ describe("wrapText", () => {
 
         const wrappedText = wrapText(text, limit);
 
-        expect(wrappedText).toBe("This is a\ntest\nstring.");
+        expect(wrappedText).toBe("This is a\ntest\nstring.\n");
     });
 
     it("ignores \\n characters", () => {
@@ -16,7 +16,7 @@ describe("wrapText", () => {
 
         const wrappedText = wrapText(text, limit);
 
-        expect(wrappedText).toBe("This is a\ntest\nstring\nwith a\nnewline\ncharacter.");
+        expect(wrappedText).toBe("This is a\ntest\nstring\nwith a\nnewline\ncharacter.\n");
     })
 
     it("respects double \\n characters", () => {
@@ -25,6 +25,6 @@ describe("wrapText", () => {
 
         const wrappedText = wrapText(text, limit);
 
-        expect(wrappedText).toBe("This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.");
+        expect(wrappedText).toBe("This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.\n");
     });
 });
