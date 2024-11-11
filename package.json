@@ -16,7 +16,11 @@
     "useful",
     "esoteric"
   ],
-  "author": "Esoteric Foundation",
+  "author": {
+    "name": "Esoteric Foundation",
+    "url": "https://www.github.com/EsotericFoundation",
+    "email": "foundationesoteric@gmail.com"
+  },
   "licenses": [
     {
       "type": "EFPL",
