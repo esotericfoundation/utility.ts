@@ -14,7 +14,7 @@ export function wrapText(text: string, limit: number, indentPart?: RegExp): stri
 }
 
 export function wrapParagraph(paragraph: string, limit: number, indentPart?: RegExp): string {
-  let wrappedLine = "";
+  let wrappedParagraph = "";
 
   paragraph = paragraph.trimEnd();
 
@@ -53,12 +53,12 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
     currentLine += word + " ";
 
     if (w == words.length - 1 || totalIndent.length + currentLine.length + words[w + 1].length > limit) {
-      wrappedLine += (linesWrapped == 0 ? indent : totalIndent) + currentLine.trimEnd() + (w == words.length - 1 ? "" : "\n");
+      wrappedParagraph += (linesWrapped == 0 ? indent : totalIndent) + currentLine.trimEnd() + (w == words.length - 1 ? "" : "\n");
 
       linesWrapped++;
       currentLine = "";
     }
   }
 
-  return wrappedLine;
+  return wrappedParagraph;
 }
