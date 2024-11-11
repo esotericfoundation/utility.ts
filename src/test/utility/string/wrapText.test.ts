@@ -7,8 +7,6 @@ describe("wrapText", () => {
 
         const wrappedText = wrapText(text, limit);
 
-        console.log(wrappedText)
-
         expect(wrappedText).toBe("This is a\ntest\nstring.");
     });
 
@@ -17,8 +15,6 @@ describe("wrapText", () => {
         const limit = 10;
 
         const wrappedText = wrapText(text, limit);
-
-        console.log(wrappedText)
 
         expect(wrappedText).toBe("This is a\ntest\nstring\nwith a\nnewline\ncharacter.");
     })
