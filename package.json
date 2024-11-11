@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "All the TypeScript utilities used by the Esoteric Foundation.",
   "main": "distrib/main/main.js",
+  "types": "distrib/main/main.d.ts",
   "scripts": {
     "installDependencies": "npm i",
     "compile": "npx tsc",
