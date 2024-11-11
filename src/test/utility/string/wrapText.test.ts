@@ -33,6 +33,23 @@ describe("wrapText", () => {
     );
   });
 
+  it("respects indents", () => {
+    const indentedText = `
+1. give appropriate Attribution, as is defined in the
+Public License below; and
+    `
+
+    const expectedText = `
+1. give appropriate Attribution, as is defined in the
+   Public License below; and
+    `
+
+    const limit = 71;
+    const wrappedText = wrapText(indentedText, limit);
+
+    expect(wrappedText).toBe(expectedText);
+  })
+
   it("handles large inputs correctly", () => {
     const largeText = readFileSync("src/test/utility/string/largeTextExample.txt").toString();
     const expectedWrappedText = readFileSync("src/test/utility/string/wrappedLargeText.txt").toString();
