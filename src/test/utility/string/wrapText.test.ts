@@ -1,4 +1,5 @@
 import { wrapText } from "../../../utility/string/wrapText";
+import { readFileSync } from "fs";
 
 describe("wrapText", () => {
   it("wraps text at the given limit", () => {
@@ -31,6 +32,16 @@ describe("wrapText", () => {
       "This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.\n"
     );
   });
+
+  it("handles large inputs correctly", () => {
+    const largeText = readFileSync("src/test/utility/string/largeTextExample.txt").toString();
+    const expectedWrappedText = readFileSync("src/test/utility/string/wrappedLargeText.txt").toString();
+
+    const limit = 71;
+
+    const wrappedText = wrapText(largeText, limit);
+    expect(wrappedText).toBe(expectedWrappedText);
+  })
 
   it("wraps text (with a newline at the end) at the given limit", () => {
     const text = "This is a test string.\n";

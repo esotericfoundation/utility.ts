@@ -1,0 +1,87 @@
+Esoteric Foundation Public License 1.0.4
+
+=======================================================================
+
+Summary
+
+This Public License is a modified version of the CC BY-NC-SA 4.0
+license, which can be found here:
+https://www.creativecommons.org/licenses/by-nc-sa/4.0/deed.en
+
+The main difference between this Public License and the CC BY-NC-SA 4.0
+license is the requirement to Share all files involved in the creation
+of Adapted Material, preferably in the form of a Git repository, and
+ideally in the form of a GitHub repository, in other words, a
+requirement for Adapted Material to be 'open source'.
+
+All differences between this Public License and the CC BY-NC-SA 4.0
+license can be seen here:
+https://www.github.com/EsotericFoundation/license/compare/0.0.1...main
+
+Note that the points under "Esoteric Foundation Public License Summary"
+is only a summary of the Public License and do not form part of the
+Public License itself.
+
+Please read and understand the entire Public License.
+
+Esoteric Foundation Public License Summary
+
+You may:
+
+  a. Use and Share the Licensed Material, provided that You:
+
+       1. give appropriate Attribution, as is defined in the
+          Public License below; and
+
+       2. use or Share the Licensed Material for NonCommercial
+          purposes only.
+
+  b. Produce, use and Share Adapted Material, provided
+     that You:
+
+       1. give appropriate Attribution, as is defined in the
+          Public License below;
+
+       2. Share a link to all files involved in the creation
+          of the Adapted Material, preferably in the form of a Git
+          repository, and ideally in the form of a GitHub repository;
+
+       3. use this Public License (this version or later)
+          as the Adapter's License (Your license);
+
+       4. refer to the Adapted Material with a name that is distinct
+          from the name of the Licensed Material, but may include
+          recognizable variations of, the name of the Licensed Material
+          (which is encouraged); and
+
+       5. produce, use or Share the Adapted Material for NonCommercial
+          purposes only.
+
+You may not:
+
+  a. Use or Share the Licensed Material without giving appropriate
+     Attribution, as is defined in the Public License below.
+
+  b. Use or Share the Licensed Material for any kind of commercial
+     purposes.
+
+  c. Produce, use or Share Adapted Material without giving appropriate
+     Attribution, as is defined in the Public License below.
+
+  d. Produce, use or Share Adapted Material and not Share files
+     involved in the creation the Adapted Material.
+
+  e. Produce, use or Share Adapted Material where the
+     Adapter's License (Your license) is not this Public License.
+
+  f. Produce, use or Share Adapted Material where the
+     Adapter's License (Your license) is an earlier version of this
+     Public License.
+
+  g. Produce, use or Share Adapted Material with the exact same name as
+     the Licensed Material.
+
+  h. Produce, use or Share Adapted Material for any kind of commercial
+     purposes.
+
+=======================================================================
