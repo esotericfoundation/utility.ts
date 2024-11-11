@@ -9,7 +9,7 @@ export function wrapText(text: string, limit: number): string {
   for (let j = 0; j < paragraphs.length; j++) {
     const paragraph = paragraphs[j];
 
-    if (j != 0) {
+    if (j !== 0) {
       wrappedText += "\n\n";
     }
 
