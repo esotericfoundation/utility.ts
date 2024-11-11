@@ -1,7 +1,7 @@
 import { wrapText } from "../../../utility/string/wrapText";
 
 describe("wrapText", () => {
-    it("should wrap text at the given limit", () => {
+    it("wraps text at the given limit", () => {
         const text = "This is a test string.";
         const limit = 10;
 
