@@ -18,4 +18,13 @@ describe("wrapText", () => {
 
         expect(wrappedText).toBe("This is a\ntest\nstring\nwith a\nnewline\ncharacter.");
     })
+
+    it("respects double \\n characters", () => {
+        const text = "This is a test string\n\nwith a newline character.";
+        const limit = 10;
+
+        const wrappedText = wrapText(text, limit);
+
+        expect(wrappedText).toBe("This is a\ntest\nstring\n\nwith a\nnewline\ncharacter.");
+    });
 });
