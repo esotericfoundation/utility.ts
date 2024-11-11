@@ -1,3 +1,3 @@
 export function cleanString(text: string): string {
-  return text.replaceAll(/\n(?!\\n)/g, " ");
+  return text.replaceAll(/(?<!\n)\n(?!\n)/g, " ");
 }
