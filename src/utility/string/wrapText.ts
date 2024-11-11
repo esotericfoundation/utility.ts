@@ -13,7 +13,7 @@ export function wrapText(text: string, limit: number): string {
       wrappedText += "\n\n";
     }
 
-    wrappedText += wrapParagraph(paragraph, limit);
+    wrappedText += wrapParagraph(paragraph, limit).trim();
   }
 
   return wrappedText;
@@ -28,15 +28,11 @@ export function wrapParagraph(text: string, limit: number): string {
   for (let i = 0; i < words.length; i++) {
     const word = words[i];
 
-    if (currentLine.length + word.length > limit) {
-      wrappedText += currentLine.trim() + "\n";
-      currentLine = "";
-    }
-
     currentLine += word + " ";
 
-    if (i === words.length - 1) {
-      wrappedText += currentLine.trim();
+    if (i === words.length - 1 || currentLine.length + words[i + 1].length > limit) {
+      wrappedText += currentLine.trim() + "\n";
+      currentLine = "";
     }
   }
 
