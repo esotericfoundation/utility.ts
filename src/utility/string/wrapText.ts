@@ -48,7 +48,7 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
   for (let w = 0; w < words.length; w++) {
     const word = words[w];
 
-    console.log(word)
+    console.log("||" + word + "||")
 
     currentLine += word + " ";
 
