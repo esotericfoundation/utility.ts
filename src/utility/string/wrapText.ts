@@ -2,7 +2,7 @@ import { cleanString } from "./cleanString";
 
 export function wrapText(text: string, limit: number): string {
   text = cleanString(text);
-  
+
   let wrappedText = "";
   let currentLine = "";
 
@@ -12,14 +12,14 @@ export function wrapText(text: string, limit: number): string {
     const word = words[i];
 
     if (currentLine.length + word.length > limit) {
-        wrappedText += currentLine.trim() + "\n";
-        currentLine = "";
+      wrappedText += currentLine.trim() + "\n";
+      currentLine = "";
     }
 
     currentLine += word + " ";
 
     if (i === words.length - 1) {
-        wrappedText += currentLine.trim();
+      wrappedText += currentLine.trim();
     }
   }
 
