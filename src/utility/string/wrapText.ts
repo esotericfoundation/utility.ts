@@ -18,8 +18,13 @@ export function wrapLine(line: string, limit: number, indentPart?: RegExp): stri
 
   line = line.trimEnd();
 
+  console.log(line);
+
   if (line.length <= limit) {
+    console.log("Line is already SHORT enough!")
     return line;
+  } else {
+    console.log("Line is too LONG!")
   }
 
   const indent = line.match(/^\s*/)[0];
