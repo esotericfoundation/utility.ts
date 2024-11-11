@@ -92,4 +92,17 @@ describe("wrapText", () => {
 
     expect(wrappedText).toBe(expectedText);
   });
+
+  it("handles large inputs correctly (with a newline at the end)", () => {
+    const largeText = readFileSync("src/test/utility/string/largeTextExample.txt").toString() + "\n";
+    const expectedWrappedText = readFileSync("src/test/utility/string/wrappedLargeText.txt").toString().replaceAll("\r\n", "\n");
+
+    const limit = 71;
+
+    const wrappedText = wrapText(largeText, limit, /(?<=^\s*)((\d+)|([a-z]))\. /);
+
+    writeFileSync("output.txt", wrappedText);
+
+    expect(wrappedText).toBe(expectedWrappedText);
+  });
 });
