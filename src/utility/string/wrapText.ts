@@ -18,8 +18,6 @@ export function wrapLine(line: string, limit: number, indentPart?: RegExp): stri
 
   line = line.trimEnd();
 
-  console.log(line)
-
   if (line.length <= limit) {
     return line;
   }
