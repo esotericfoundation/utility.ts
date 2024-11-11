@@ -47,6 +47,8 @@ Public License below; and
     const limit = 71;
     const wrappedText = wrapText(indentedText, limit);
 
+    writeFileSync("output.txt", wrappedText);
+
     expect(wrappedText).toBe(expectedText);
   })
 
@@ -57,8 +59,6 @@ Public License below; and
     const limit = 71;
 
     const wrappedText = wrapText(largeText, limit);
-
-    writeFileSync("output.txt", wrappedText);
 
     expect(wrappedText).toBe(expectedWrappedText);
   })
