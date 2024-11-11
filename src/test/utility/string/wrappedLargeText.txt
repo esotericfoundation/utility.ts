@@ -30,24 +30,24 @@ You may:
 
   a. Use and Share the Licensed Material, provided that You:
 
-       1. give appropriate Attribution, as is defined in the
-          Public License below; and
+       1. give appropriate Attribution, as is defined in the Public
+          License below; and
 
-       2. use or Share the Licensed Material for NonCommercial
-          purposes only.
+       2. use or Share the Licensed Material for NonCommercial purposes
+          only.
 
   b. Produce, use and Share Adapted Material, provided
      that You:
 
-       1. give appropriate Attribution, as is defined in the
-          Public License below;
+       1. give appropriate Attribution, as is defined in the Public
+          License below;
 
-       2. Share a link to all files involved in the creation
-          of the Adapted Material, preferably in the form of a Git
-          repository, and ideally in the form of a GitHub repository;
+       2. Share a link to all files involved in the creation of the
+          Adapted Material, preferably in the form of a Git repository,
+          and ideally in the form of a GitHub repository;
 
-       3. use this Public License (this version or later)
-          as the Adapter's License (Your license);
+       3. use this Public License (this version or later) as the
+          Adapter's License (Your license);
 
        4. refer to the Adapted Material with a name that is distinct
           from the name of the Licensed Material, but may include
@@ -71,12 +71,11 @@ You may not:
   d. Produce, use or Share Adapted Material and not Share files
      involved in the creation the Adapted Material.
 
-  e. Produce, use or Share Adapted Material where the
-     Adapter's License (Your license) is not this Public License.
+  e. Produce, use or Share Adapted Material where the Adapter's License
+     (Your license) is not this Public License.
 
-  f. Produce, use or Share Adapted Material where the
-     Adapter's License (Your license) is an earlier version of this
-     Public License.
+  f. Produce, use or Share Adapted Material where the Adapter's License
+     (Your license) is an earlier version of this Public License.
 
   g. Produce, use or Share Adapted Material with the exact same name as
      the Licensed Material.

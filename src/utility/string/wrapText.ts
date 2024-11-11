@@ -62,7 +62,7 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
     currentLine += word + " ";
 
-    if (w == words.length - 1 || totalIndent.length + currentLine.length + words[w + 1].length > limit) {
+    if (w == words.length - 1 || (linesWrapped == 0 ? indent : totalIndent).length + currentLine.length + words[w + 1].length > limit) {
       wrappedParagraph += (linesWrapped == 0 ? indent : totalIndent) + currentLine.trimEnd() + (w == words.length - 1 ? "" : "\n");
 
       linesWrapped++;
