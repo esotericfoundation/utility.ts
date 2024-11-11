@@ -34,18 +34,14 @@ describe("wrapText", () => {
   });
 
   it("respects indents", () => {
-    const indentedText = `
-1. give appropriate Attribution, as is defined in the
-Public License below; and
-    `
+    const indentedText = `1. give appropriate Attribution, as is defined in the Public License below; and`
 
-    const expectedText = `
-1. give appropriate Attribution, as is defined in the
-   Public License below; and
-    `
+    const expectedText =
+`1. give appropriate Attribution, as is defined in the Public License
+   below; and\n`;
 
     const limit = 71;
-    const wrappedText = wrapText(indentedText, limit);
+    const wrappedText = wrapText(indentedText, limit, /\d+\. /);
 
     expect(wrappedText).toBe(expectedText);
   })
