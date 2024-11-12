@@ -56,7 +56,7 @@ describe("wrapText", () => {
 
     const limit = 71;
 
-    const wrappedText = wrapText(largeText, limit, /(?<=^\s*)((\d+)|([a-z]))\. /);
+    const wrappedText = wrapText(largeText, limit, /(?<=^\s*)((\d+)|([a-z])|m{0,4}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3}))\. /);
 
     writeFileSync("output.txt", wrappedText);
 
