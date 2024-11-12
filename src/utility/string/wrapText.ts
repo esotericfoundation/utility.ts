@@ -22,7 +22,7 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
   const indentCharacter = indent[0] ?? " ";
 
   if (paragraph.length <= limit) {
-    if (paragraph === "\n") return "\n";
+    if (paragraph === "") return "\n";
 
     if (!/\n/.test(paragraph)) {
       return paragraph;
