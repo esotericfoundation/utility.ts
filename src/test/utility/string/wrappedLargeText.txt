@@ -37,8 +37,7 @@ You may:
        2. use or Share the Licensed Material for NonCommercial purposes
           only.
 
-  b. Produce, use and Share Adapted Material, provided
-     that You:
+  b. Produce, use and Share Adapted Material, provided that You:
 
        1. give appropriate Attribution, as defined in the Public
           License below;
