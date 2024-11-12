@@ -4,7 +4,9 @@
     "outDir": "dist",
     "declaration": true,
     "lib": ["ESNext"],
-    "target": "ESNext"
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext"
   },
   "exclude": ["dist"]
 }
