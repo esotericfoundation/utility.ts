@@ -18,12 +18,12 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
 
   paragraph = paragraph.trimEnd();
 
-  if (paragraph.length <= limit) {
-    return paragraph;
-  }
-
   const indent = paragraph.match(/^\s*/)[0];
   const indentCharacter = indent[0] ?? " ";
+
+  if (paragraph.length <= limit) {
+    return paragraph.replaceAll(RegExp(`(?<!^)${indentCharacter}{2,}`, "g"), " ").replaceAll("\n", "");
+  }
 
   const match = paragraph.match(indentPart);
 
