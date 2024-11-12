@@ -22,6 +22,8 @@ export function wrapParagraph(paragraph: string, limit: number, indentPart?: Reg
   const indentCharacter = indent[0] ?? " ";
 
   if (paragraph.length <= limit) {
+    if (paragraph === "\n") return "\n";
+
     return paragraph.replaceAll(RegExp(`(?<!^)${indentCharacter}{2,}`, "g"), " ").replaceAll("\n", "");
   }
 
