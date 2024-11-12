@@ -4,10 +4,12 @@ export function wrapText(text: string, limit: number, indentPart?: RegExp): stri
   text = cleanString(text);
   let wrappedText = "";
 
-  const paragraphs = text.split("\n\n");
+  const paragraphNewlines = [...text.matchAll(/\n{2,}/g)];
+
+  const paragraphs = text.split(/\n{2,}/g);
   for (let p = 0; p < paragraphs.length; p++) {
     const paragraph = paragraphs[p];
-    wrappedText += wrapParagraph(paragraph, limit, indentPart) + "\n\n";
+    wrappedText += wrapParagraph(paragraph, limit, indentPart) + (paragraphNewlines[p]?.[0] ?? "\n\n");
   }
 
   return wrappedText.trimEnd() + "\n";
