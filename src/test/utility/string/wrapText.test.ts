@@ -38,6 +38,15 @@ describe("wrapText", () => {
     expect(wrappedText).toBe("This is a\ntest\nstring\n\n\nwith a\nnewline\ncharacter.\n");
   });
 
+  it("respects \\n characters of arbitrary length (with a newline at the end)", () => {
+    const text = "This is a test string\n\n\n\n\n\nwith a newline character.";
+    const limit = 10;
+
+    const wrappedText = wrapText(text, limit);
+
+    expect(wrappedText).toBe("This is a\ntest\nstring\n\n\n\n\n\nwith a\nnewline\ncharacter.\n");
+  });
+
   it("respects indents", () => {
     const indentedText = `1. give appropriate Attribution, as is defined in the Public License below; and`;
 
@@ -97,6 +106,15 @@ describe("wrapText", () => {
     const wrappedText = wrapText(text, limit);
 
     expect(wrappedText).toBe("This is a\ntest\nstring\n\n\nwith a\nnewline\ncharacter.\n");
+  });
+
+  it("respects \\n characters of arbitrary length (with a newline at the end)", () => {
+    const text = "This is a test string\n\n\n\n\n\nwith a newline character.\n";
+    const limit = 10;
+
+    const wrappedText = wrapText(text, limit);
+
+    expect(wrappedText).toBe("This is a\ntest\nstring\n\n\n\n\n\nwith a\nnewline\ncharacter.\n");
   });
 
   it("respects indents (with a newline at the end)", () => {
