@@ -26,7 +26,7 @@
     "url": "https://www.github.com/EsotericFoundation",
     "email": "foundationesoteric@gmail.com"
   },
-  "license": "EFPL",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/EsotericFoundation/utility.ts/issues"
   },
