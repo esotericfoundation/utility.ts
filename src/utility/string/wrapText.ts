@@ -1,5 +1,15 @@
 import { cleanString } from "./cleanString";
 
+/**
+ * This function wraps {@link text} to a certain {@link limit} with a configurable detection for {@link indentPart}s.
+ * @param text The text to wrap over multiple lines.
+ * @param limit The limit of characters in a single line of {@link text}.
+ * @param indentPart A regular expression to detect indent characters of the {@link text}.
+ * @returns The wrapped text.
+ * @author Esoteric Enderman <esotericenderman@gmail.com>
+ * @copyright 2024 [Esoteric Foundation](https://esoteric.foundation)
+ * @license [GPL-3.0-only](https://github.com/EsotericFoundation/utility.ts/blob/main/LICENSE)
+ */
 export function wrapText(text: string, limit: number, indentPart?: RegExp): string {
   text = cleanString(text);
   let wrappedText = "";
