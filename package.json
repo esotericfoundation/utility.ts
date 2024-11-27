@@ -26,6 +26,13 @@
     "url": "https://www.github.com/EsotericFoundation",
     "email": "foundationesoteric@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "Esoteric Enderman",
+      "url": "https://enderman.dev",
+      "email": "esotericenderman@gmail.com"
+    }
+  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/EsotericFoundation/utility.ts/issues"
