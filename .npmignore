@@ -9,3 +9,4 @@ babel.config.js
 jest.config.js
 jsconfig.json
 *.tgz
+.idea
