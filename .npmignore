@@ -10,3 +10,4 @@ jest.config.js
 jsconfig.json
 *.tgz
 .idea
+output.txt
