@@ -1,5 +1,5 @@
 /**
- * This method inverts a map, changing all keys to values and all values to keys.
+ * This method inverts a {@link map}, changing all keys to values and all values to keys.
  * @param map The map to invert.
  * @returns The inverted map.
  * @author Esoteric Enderman <esotericenderman@gmail.com>
