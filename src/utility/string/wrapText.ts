@@ -25,7 +25,7 @@ export function wrapText(text: string, limit: number, indentPart?: RegExp): stri
   return wrappedText.trimEnd() + "\n";
 }
 
-export function wrapParagraph(paragraph: string, limit: number, indentPart?: RegExp): string {
+function wrapParagraph(paragraph: string, limit: number, indentPart?: RegExp): string {
   let wrappedParagraph = "";
 
   paragraph = paragraph.trimEnd();
