@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+- Added `replaceCharacter` function.
+
+**Full Changelog**: https://github.com/EsotericFoundation/utility.ts/compare/1.0.0...1.1.0
+
 ## 1.0.0
 
 - Added documentation.
