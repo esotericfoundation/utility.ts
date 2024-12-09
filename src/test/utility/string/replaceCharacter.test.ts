@@ -1,4 +1,4 @@
-import { replaceCharacter } from "../../../utility/string/replace";
+import { replaceCharacter } from "../../../utility/string/replaceCharacter";
 
 describe("replaceCharacter", () => {
     it("replaces a character at a given index in a string with another character", () => {
