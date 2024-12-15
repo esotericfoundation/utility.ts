@@ -1,5 +1,7 @@
 # Esoteric Utility
 
+[![Project Status: Maintained](./assets/images/badges/status.svg)](./)
+
 > All the TypeScript utilities used by the [Esoteric Foundation](https://github.com/EsotericFoundation).
 
 ## License
