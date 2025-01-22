@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2
+
+- Fixed `getFiles` method.
+
+**Full Changelog**: https://github.com/EsotericFoundation/utility.ts/compare/1.1.1...1.1.2
+
 ## 1.1.1
 
 - Made `replaceCharacter` actually usable.
